@@ -1,0 +1,45 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Tranquilo H PMS",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.ico",
+  "colors": {
+    "primary": "#6366f1",
+    "light": "#818cf8",
+    "dark": "#4f46e5"
+  },
+  "topbarLinks": [],
+  "topbarCtaButton": {
+    "name": "Ir al sistema",
+    "url": "https://tranquiloh.com"
+  },
+  "navigation": [
+    {
+      "group": "Introducción",
+      "pages": ["introduccion"]
+    },
+    {
+      "group": "Guías de inicio",
+      "pages": [
+        "guias/primera-propiedad",
+        "guias/habitaciones",
+        "guias/reservas"
+      ]
+    },
+    {
+      "group": "Módulos",
+      "pages": [
+        "modulos/calendario",
+        "modulos/checkin-digital",
+        "modulos/channel-manager",
+        "modulos/revenue",
+        "modulos/pagos",
+        "modulos/whatsapp"
+      ]
+    }
+  ],
+  "footerSocials": {}
+}
