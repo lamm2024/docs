@@ -1,0 +1,146 @@
+---
+title: "Configuración Inicial de su Propiedad en TranquilOH PMS"
+sidebarTitle: "Configuración"
+description: "Aprenda a configurar su propiedad en TranquilOH PMS: datos generales, horarios, moneda, roles de usuario y plantillas de notificación."
+---
+
+Una configuración inicial completa y precisa es la base de un funcionamiento correcto en TranquilOH PMS. Los datos que registre en esta sección afectan directamente la forma en que el sistema genera documentos, calcula tarifas, notifica a su equipo y se comunica con sus huéspedes. Le recomendamos dedicar unos minutos a revisar cada área antes de comenzar a operar. Para acceder a la configuración general, diríjase al menú principal y seleccione **Configuración** en el panel lateral.
+
+<Tabs>
+  <Tab title="Información General">
+    Esta sección recoge los datos de identidad de su propiedad. La información aquí registrada aparecerá en facturas, correos electrónicos y documentos generados por el sistema.
+
+    **Datos básicos de la propiedad:**
+
+    - **Nombre comercial**: nombre que verán sus huéspedes en las comunicaciones.
+    - **Nombre legal o razón social**: nombre registrado ante las autoridades fiscales.
+    - **Correo electrónico de contacto**: dirección que recibirá respuestas de los huéspedes.
+    - **Teléfono principal**: número de contacto visible en documentos de confirmación.
+    - **Sitio web** _(opcional)_: URL del sitio oficial de la propiedad.
+
+    **Dirección:**
+
+    - Calle y número
+    - Ciudad, estado o provincia
+    - Código postal
+    - País
+
+    **Datos fiscales:**
+
+    - Número de identificación fiscal (RFC, RUT, NIF, según el país)
+    - Régimen fiscal aplicable
+    - Dirección fiscal (si difiere de la dirección operativa)
+
+    <Warning>
+      Una vez que haya emitido facturas o comprobantes fiscales a través de TranquilOH PMS, **no modifique los datos fiscales** (razón social, número de identificación o régimen) sin consultar con su asesor contable. Los cambios retroactivos pueden generar inconsistencias en su historial de facturación y complicaciones ante las autoridades fiscales.
+    </Warning>
+  </Tab>
+  <Tab title="Horarios y Operación">
+    Configure los horarios y parámetros operativos que TranquilOH PMS usará como referencia para la gestión de reservas, check-ins y check-outs.
+
+    **Horarios predeterminados:**
+
+    | Parámetro | Descripción | Valor sugerido |
+    | --- | --- | --- |
+    | Hora de check-in | Hora mínima de ingreso estándar | 15:00 |
+    | Hora de check-out | Hora máxima de salida estándar | 12:00 |
+    | Recepción abierta desde | Inicio de atención presencial | 07:00 |
+    | Recepción cerrada a | Fin de atención presencial | 23:00 |
+
+    **Días de operación:** Indique si su propiedad opera los 7 días de la semana o si existen días de cierre. Esta configuración afecta la disponibilidad visible en el motor de reservas y las alertas automáticas del equipo.
+
+    **Tiempo mínimo de estadía:** Puede definir un número mínimo de noches requerido para aceptar una reserva. Esta regla puede personalizarse por temporada o tipo de habitación desde el módulo **Tarifas y Disponibilidad**.
+
+    <Tip>
+      Configure alertas de llegada anticipada y salida tardía para que el sistema notifique automáticamente al personal de recepción y housekeeping cuando un huésped solicite horarios fuera del estándar.
+    </Tip>
+  </Tab>
+  <Tab title="Moneda e Idioma">
+    Establezca la moneda y el idioma en que TranquilOH PMS operará para su propiedad.
+
+    **Moneda de operación:** Seleccione la moneda principal en que se expresarán todas las tarifas, cargos y facturas. TranquilOH PMS soporta las principales monedas de América Latina, Europa y el mundo.
+
+    <Note>
+      El cambio de moneda de operación no convierte automáticamente los precios ya registrados en el sistema. Si modifica la moneda después de haber configurado tarifas o emitido facturas, deberá actualizar los valores manualmente para reflejar la moneda correcta.
+    </Note>
+
+    **Separadores numéricos:** Configure el formato de presentación de cifras (punto o coma como separador decimal y de miles) de acuerdo con las convenciones locales de su país.
+
+    **Idioma de la interfaz:** Elija el idioma en que se mostrará la interfaz de administración para todos los usuarios de su propiedad. Actualmente TranquilOH PMS está disponible en español, inglés y portugués.
+
+    **Idioma de documentos:** Puede configurar un idioma diferente para los documentos y correos enviados a los huéspedes, lo que resulta útil si su equipo opera en un idioma distinto al de su clientela principal.
+  </Tab>
+  <Tab title="Usuarios y Roles">
+    TranquilOH PMS permite gestionar el acceso de su equipo mediante un sistema de roles predefinidos. Cada rol otorga permisos específicos para evitar accesos no autorizados a información sensible.
+
+    **Roles disponibles:**
+
+    <Accordion title="Administrador">
+      Acceso completo a todos los módulos del sistema, incluyendo configuración general, facturación, reportes financieros, gestión de usuarios y datos fiscales. Se recomienda asignar este rol únicamente al gerente general o propietario de la propiedad.
+    </Accordion>
+
+    <Accordion title="Recepcionista">
+      Acceso a reservas, perfiles de huéspedes, check-in, check-out y cobros básicos. No tiene acceso a la configuración del sistema, reportes financieros avanzados ni gestión de otros usuarios.
+    </Accordion>
+
+    <Accordion title="Housekeeping">
+      Acceso exclusivo al módulo de housekeeping para consultar el estado de habitaciones, marcar tareas completadas y reportar incidencias. No puede ver datos de reservas completas ni información de pagos.
+    </Accordion>
+
+    **Cómo agregar un nuevo usuario:**
+
+    <Steps>
+      <Step title="Acceda a Gestión de Usuarios">
+        Dentro de **Configuración**, seleccione la sección **Equipo y Usuarios**.
+      </Step>
+      <Step title="Invite al nuevo miembro">
+        Haga clic en **Invitar Usuario**, ingrese el correo electrónico del colaborador y seleccione el rol correspondiente.
+      </Step>
+      <Step title="Confirme la invitación">
+        El colaborador recibirá un correo con un enlace para crear su contraseña y acceder al sistema con los permisos asignados.
+      </Step>
+    </Steps>
+
+    <Warning>
+      Revise periódicamente la lista de usuarios activos y desactive el acceso de colaboradores que ya no formen parte de su equipo. Esto protege la información de su propiedad y mantiene la trazabilidad de las acciones en el sistema.
+    </Warning>
+  </Tab>
+  <Tab title="Notificaciones y Plantillas">
+    Configure qué notificaciones envía TranquilOH PMS de forma automática y personalice el contenido de los correos electrónicos que reciben sus huéspedes.
+
+    **Notificaciones automáticas disponibles:**
+
+    - 📧 **Confirmación de reserva**: enviada al huésped al momento de crear o confirmar una reserva.
+    - 📧 **Recordatorio de llegada**: enviada 24 o 48 horas antes del check-in (configurable).
+    - 📧 **Bienvenida al check-in**: enviada al registrar el ingreso del huésped.
+    - 📧 **Solicitud de valoración**: enviada tras el check-out para invitar al huésped a dejar una reseña.
+    - 📧 **Factura o recibo**: enviada con el comprobante de pago adjunto.
+
+    **Personalización de plantillas:** Cada plantilla de correo puede editarse para incluir el nombre y logotipo de su propiedad, un mensaje personalizado y los datos de contacto relevantes. Utilice las variables dinámicas disponibles para insertar información específica de cada reserva de forma automática.
+
+    ```text
+    Variables disponibles en plantillas:
+    {{huesped_nombre}}       → Nombre completo del huésped
+    {{reserva_numero}}       → Número de confirmación
+    {{fecha_llegada}}        → Fecha de check-in
+    {{fecha_salida}}         → Fecha de check-out
+    {{habitacion_nombre}}    → Nombre o número de la habitación
+    {{propiedad_nombre}}     → Nombre comercial de la propiedad
+    {{propiedad_telefono}}   → Teléfono de contacto de la propiedad
+    ```
+
+    <Note>
+      Para que los correos automáticos se envíen correctamente, asegúrese de que el correo electrónico configurado en **Información General** sea una dirección activa y con capacidad de recibir respuestas de sus huéspedes. TranquilOH PMS enviará las notificaciones usando esa dirección como remitente.
+    </Note>
+
+    **Notificaciones internas para el equipo:** Además de los correos a huéspedes, puede activar alertas internas que notifiquen a su equipo sobre nuevas reservas, solicitudes especiales, tareas de housekeeping pendientes y pagos registrados.
+  </Tab>
+</Tabs>
+
+## Guardado de cambios
+
+Cada sección de configuración cuenta con su propio botón **Guardar Cambios**. Los cambios no se aplican de forma automática mientras navega entre secciones, por lo que es importante guardar antes de abandonar cada pestaña.
+
+<Note>
+  TranquilOH PMS mantiene un registro de auditoría de todos los cambios realizados en la configuración del sistema, incluyendo la fecha, hora y usuario responsable de cada modificación. Puede consultar este historial desde **Configuración → Registro de Cambios**.
+</Note>
