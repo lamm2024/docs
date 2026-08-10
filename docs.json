@@ -17,30 +17,37 @@
     "name": "Ir al sistema",
     "url": "https://tranquiloh.com"
   },
-  "navigation": [
-    {
-      "group": "Introducción",
-      "pages": ["introduccion"]
-    },
-    {
-      "group": "Guías de inicio",
-      "pages": [
-        "guias/primera-propiedad",
-        "guias/habitaciones",
-        "guias/reservas"
-      ]
-    },
-    {
-      "group": "Módulos",
-      "pages": [
-        "modulos/calendario",
-        "modulos/checkin-digital",
-        "modulos/channel-manager",
-        "modulos/revenue",
-        "modulos/pagos",
-        "modulos/whatsapp"
-      ]
-    }
-  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentación",
+        "groups": [
+          {
+            "group": "Introducción",
+            "pages": ["introduccion"]
+          },
+          {
+            "group": "Guías de inicio",
+            "pages": [
+              "guias/primera-propiedad",
+              "guias/habitaciones",
+              "guias/reservas"
+            ]
+          },
+          {
+            "group": "Módulos",
+            "pages": [
+              "modulos/calendario",
+              "modulos/checkin-digital",
+              "modulos/channel-manager",
+              "modulos/revenue",
+              "modulos/pagos",
+              "modulos/whatsapp"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "footerSocials": {}
 }
